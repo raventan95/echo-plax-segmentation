@@ -31,7 +31,7 @@ model = load_model(model_name, custom_objects={'dice_coef_loss':dice_coef_loss, 
 
 for video in videos:
 	print('Segmenting', video, '...')
-	images = np.array(imageio.mimread(input_folder+video))
+	images = np.array(imageio.mimread(input_folder+video, memtest=False))
 	if len(images.shape) == 4:
 		images = images[:,:,:,0] # convert RGB to grayscale
 	reader = imageio.get_reader(input_folder+video, 'ffmpeg')
@@ -55,5 +55,4 @@ for video in videos:
 		writer.append_data(overlay)
 	writer.close()
 	os.remove('./overlay.png')
-	print('\n')
 print('Segmentation complete.')
