@@ -33,6 +33,13 @@ python segment.py
 
 Here are two examples of segmented video from the model, evaluated on the provided sample videos. 
 
+- yellow : right ventricle
+- light blue : septum
+- dark blue : left ventricle
+- gray : aorta
+- green : left atrium
+- orange : outer cardiac wall
+
 | ![](result/sample2.gif) |  ![](result/sample4.gif) |
 |:--:|:--:|
 | Sample2 segmented | Sample4 segmented |
