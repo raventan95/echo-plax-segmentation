@@ -31,7 +31,7 @@ python segment.py
 
 ## Sample results
 
-Here are two examples of segmented video from the model, evaluated on the provided sample videos. 
+Here are two examples of segmented video from the model, evaluated on the provided sample videos. The sample videos are from public domain.
 
 - yellow : right ventricle
 - light blue : septum
@@ -40,6 +40,6 @@ Here are two examples of segmented video from the model, evaluated on the provid
 - green : left atrium
 - orange : outer cardiac wall
 
-| ![](result/sample2.gif) |  ![](result/sample4.gif) |
+| ![](result/test2_segmented.gif) |  ![](result/test3_segmented.gif) |
 |:--:|:--:|
-| Sample2 segmented | Sample4 segmented |
+| test2 segmented | test3 segmented |
